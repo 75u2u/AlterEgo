@@ -137,7 +137,7 @@ public class MainActivity extends Activity implements OnClickListener, TextToSpe
         @Override
         public void onError(int error) {
             if(error == 9) {
-                Toast.makeText(getApplicationContext(), "マイクの権限がないよ！", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "設定からマイクの権限を与えて下さい！", Toast.LENGTH_LONG).show();
                 ((ImageView) findViewById(R.id.imageView_Alt)).setImageResource(R.drawable.girl_sad);
             } else if(error == 7) {
                 Toast.makeText(getApplicationContext(), "うまく聞き取れなかったよ！", Toast.LENGTH_LONG).show();
@@ -176,7 +176,12 @@ public class MainActivity extends Activity implements OnClickListener, TextToSpe
                 ((ImageView) findViewById(R.id.imageView_Alt)).setImageResource(R.drawable.girl_angry);
             }
             if (s.matches(".*おはよう.*")) {
-                s = "おはようございます．";
+                s = "おはようございます．\n今日も一日頑張りましょう！";
+                ((ImageView) findViewById(R.id.imageView_Alt)).setImageResource(R.drawable.girl_happy);
+            }
+            if (s.matches("Good morning") || s.matches("グッドモーニング") || s.matches("モーニング")) {
+                tts.setLanguage(Locale.US);
+                s = "Let's do our best today !";
                 ((ImageView) findViewById(R.id.imageView_Alt)).setImageResource(R.drawable.girl_happy);
             }
             if (s.matches(".*可愛い.*") || s.matches(".*かわいい.*")) {
@@ -191,12 +196,8 @@ public class MainActivity extends Activity implements OnClickListener, TextToSpe
                 s = "福井大学\n1949年に設立された国立大学の一つです．\n私の生みの親が在籍しています．";
                 ((ImageView) findViewById(R.id.imageView_Alt)).setImageResource(R.drawable.girl_angry);
             }
-            if (s.matches(".*鶴.*") || s.matches(".*つるゆうや.*")) {
-                s = "ツル ユウヤ\n福井大学 工学部 3年\n私の生みの親です．長谷川先生の授業の課題で私が開発されました．";
-                ((ImageView) findViewById(R.id.imageView_Alt)).setImageResource(R.drawable.girl_happy);
-            }
             if (s.matches(".*君.*") || s.matches(".*あなた.*") || s.matches(".*名前.*")) {
-                s = "私はアルトと言います．\nツル ユウヤという方が私を開発しました．よろしくお願いいたします．";
+                s = "私はアルトと言います．\nあなたのお手伝いをさせていただきます．\nよろしくお願いいたします！";
                 ((ImageView) findViewById(R.id.imageView_Alt)).setImageResource(R.drawable.girl_happy);
             }
             if (s.matches(".*疲れた.*")) {
@@ -209,7 +210,7 @@ public class MainActivity extends Activity implements OnClickListener, TextToSpe
             }
             if (s.matches(".*フシギダネ.*")) {
                 s = "フシギダネ\nたねポケモン\n高さ 0.7メートル．重さ 6.9キログラム\n生まれた時から背中に植物の種があって少しずつ大きく育つ．";
-                ((ImageView) findViewById(R.id.imageView_Alt)).setImageResource(R.drawable.girl_normal);
+                ((ImageView) findViewById(R.id.imageView_Alt)).setImageResource(R.drawable.fushigidane);
             }
             if (s.matches(".*ソース.*") || s.matches(".*コード.*")) {
                 s = "私のソースコードにアクセスします．";
@@ -242,6 +243,9 @@ public class MainActivity extends Activity implements OnClickListener, TextToSpe
             TextView textView = findViewById(R.id.text_view);
             textView.setText(s);
 
+            if (s != "Let's do our best today !") {
+                tts.setLanguage(Locale.JAPAN);
+            }
             // 音声合成して発音
             if(tts.isSpeaking()) {
                 tts.stop();

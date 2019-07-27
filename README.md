@@ -1,6 +1,11 @@
-# AlterEgo
+﻿# AlterEgo
 音声アシスタントアプリ <b>AlterEgo</b>  
 あなたの声に応じていろいろ手助けしてくれます(予定)．  
+
+## スクリーンショット
+![1](https://github.com/75u2u/AlterEgo/screenshots/screenshot1.png)
+![2](https://github.com/75u2u/AlterEgo/screenshots/screenshot2.png)
+![3](https://github.com/75u2u/AlterEgo/screenshots/screenshot3.png)
 
 ## インストール
 <ol>
@@ -23,12 +28,12 @@
 <li>福井大学</li>
 <li>近大高専</li>
 <li>長谷川</li>
-<li>鶴，つるゆうや</li>
+<li>Good morning，グッドモーニング，モーニング</li>
 <li>君，あなた，名前</li>
 <li>フシギダネ</li>
 <li>ソース，コード</li>
 <li>YouTube，ようつべ</li>
-<li>Twitter</li>
+<li>Twitter，呟く</li>
 <li>Google [検索ワード]</li>
 <li>Wikipedia [検索ワード]，Wiki [検索ワード]</li>
 </ul>
