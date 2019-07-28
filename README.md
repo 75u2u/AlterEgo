@@ -1,11 +1,11 @@
-﻿# AlterEgo
+# AlterEgo
 音声アシスタントアプリ <b>AlterEgo</b>  
 あなたの声に応じていろいろ手助けしてくれます(予定)．  
 
 ## スクリーンショット
-![1](https://github.com/75u2u/AlterEgo/blob/master/screenshots/screenshot1.png)
-![2](https://github.com/75u2u/AlterEgo/blob/master/screenshots/screenshot2.png)
-![3](https://github.com/75u2u/AlterEgo/blob/master/screenshots/screenshot3.png)
+<img src="https://github.com/75u2u/AlterEgo/blob/master/screenshots/screenshot1.png" width="320">
+<img src="https://github.com/75u2u/AlterEgo/blob/master/screenshots/screenshot2.png" width="320">
+<img src="https://github.com/75u2u/AlterEgo/blob/master/screenshots/screenshot3.png" width="320">
 
 ## インストール
 <ol>
