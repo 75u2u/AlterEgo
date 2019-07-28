@@ -3,9 +3,9 @@
 あなたの声に応じていろいろ手助けしてくれます(予定)．  
 
 ## スクリーンショット
-![1](https://github.com/75u2u/AlterEgo/screenshots/screenshot1.png)
-![2](https://github.com/75u2u/AlterEgo/screenshots/screenshot2.png)
-![3](https://github.com/75u2u/AlterEgo/screenshots/screenshot3.png)
+![1](https://github.com/75u2u/AlterEgo/blob/master/screenshots/screenshot1.png)
+![2](https://github.com/75u2u/AlterEgo/blob/master/screenshots/screenshot2.png)
+![3](https://github.com/75u2u/AlterEgo/blob/master/screenshots/screenshot3.png)
 
 ## インストール
 <ol>
