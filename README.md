@@ -4,8 +4,6 @@
 
 ## スクリーンショット
 <img src="https://github.com/75u2u/AlterEgo/blob/master/screenshots/screenshot1.png" width="320">
-<img src="https://github.com/75u2u/AlterEgo/blob/master/screenshots/screenshot2.png" width="320">
-<img src="https://github.com/75u2u/AlterEgo/blob/master/screenshots/screenshot3.png" width="320">
 
 ## インストール
 <ol>
@@ -19,18 +17,15 @@
 [検索ワード]には検索したい用語を当てはめるとその用語で検索してくれます．  
 例）「Google 明日の天気」　→　Googleで明日の天気を調べてくれます．  
 認識ワード以外の言葉を言うとオウム返ししてくれます．  
-
+  
+認識ワード例  
 <ul>
 <li>おはよう</li>
 <li>疲れた</li>
 <li>かわいい，可愛い</li>
 <li>何でも</li>
-<li>福井大学</li>
-<li>近大高専</li>
-<li>長谷川</li>
 <li>Good morning，グッドモーニング，モーニング</li>
 <li>君，あなた，名前</li>
-<li>フシギダネ</li>
 <li>ソース，コード</li>
 <li>YouTube，ようつべ</li>
 <li>Twitter，呟く</li>
